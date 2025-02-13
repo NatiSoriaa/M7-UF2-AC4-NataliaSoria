@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+<form method="POST">
+    <input type="text" name="title" placeholder="Título" required>
+    <input type="text" name="author" placeholder="Autor" required>
+    <input type="number" name="year" placeholder="Año" required>
+    <button type="submit">Agregar</button>
+</form>
+{% endblock %}

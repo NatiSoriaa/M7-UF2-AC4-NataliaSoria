@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block title %}Llista de Llibres{% endblock %}
+{% block content %}
+<h1>Llibres Disponibles</h1>
+<ul>
+    {% for book in books %}
+        <li><strong>{{ book.title }}</strong> de {{ book.author }} ({{ book.year }})</li>
+    {% else %}
+        <li>No hi ha llibres disponibles.</li>
+    {% endfor %}
+</ul>
+<a href="add_book.php">Afegir un nou llibre</a>
+{% endblock %}
