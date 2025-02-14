@@ -1,0 +1,17 @@
+{
+    "name": "natic/project",
+    "autoload": {
+        "psr-4": {
+            "Natic\\Project\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "NatiSoriaa",
+            "email": "naticsoria@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.20"
+    }
+}
